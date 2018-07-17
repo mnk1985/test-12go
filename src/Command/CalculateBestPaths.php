@@ -101,5 +101,7 @@ class CalculateBestPaths extends Command
         }
 
         $this->writer->write($input->getArgument(self::OUTPUT), $destinationResults);
+
+        $output->writeln('<info>Done</info>');
     }
 }
